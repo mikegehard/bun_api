@@ -47,7 +47,7 @@ export class StripeService {
 
       let subscriptionId = '';
       let subscriptionStatus = 'active';
-      let priceId = freePrice?.id || '';
+      const priceId = freePrice?.id || '';
 
       // 3. Criar Assinatura se o preço existir
       if (freePrice) {
