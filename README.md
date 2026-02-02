@@ -1,6 +1,8 @@
 # api_bun - Multi-tenant SaaS API Boilerplate
 
-A professional, scalable, and modular SaaS API boilerplate built with **Bun.js**, **ElysiaJS**, and **Mongoose**.
+## Purpose
+
+Multi-tenant SaaS API boilerplate providing authentication, subscription management, and role-based access control. Built with Bun.js, ElysiaJS, and MongoDB for rapid SaaS development.
 
 ## 🚀 Technologies
 

@@ -26,6 +26,10 @@ export const authMiddleware = new Elysia({ name: 'auth-middleware' })
       return 'Token inválido';
     }
 
-    // ✅ agora o TS aceita
-    store.user = payload as AuthUser;
+    // Map JWT payload to AuthUser
+    store.user = {
+      id: payload.sub,
+      email: payload.email,
+      roles: payload.roles,
+    } as AuthUser;
   });
